@@ -1,0 +1,124 @@
+/* Import a Google Font for Old Roman Style */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Times New Roman', serif; /* Use Times New Roman or any Old Roman-style font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set text color to a dark gray for better readability */
+    line-height: 1.8; /* Increased line height for readability */
+    background: white; /* Set background color to white */
+}
+
+header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* Set header text color to white for contrast */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Larger font size for the main title */
+    font-weight: bold; /* Make header text bold */
+    color: #ffdd57; /* Highlight color for header text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add subtle shadow for depth */
+}
+
+header p {
+    font-size: 1.5rem; /* Slightly smaller font size for subtitle */
+    margin-top: 0.5rem;
+    color: #ddd; /* Light gray color for subtitle */
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9; /* Light background color for the main content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for a lifted effect */
+}
+
+section {
+    margin-bottom: 3rem;
+    opacity: 0; /* Initially hide sections */
+    transform: translateY(30px); /* Move sections slightly down */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    color: #333; /* Dark color for section headings */
+    border-bottom: 3px solid #ffdd57; /* Highlight color for heading underline */
+    padding-bottom: 0.5rem;
+    font-size: 2rem; /* Larger font size for headings */
+    font-weight: bold; /* Make headings bold */
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem; /* Slightly larger font size for list items */
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold; /* Make link text bold */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff4500; /* Change link color on hover */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem; /* Slightly smaller font size for footer */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; /* Further adjust font size for very small screens */
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Further adjust font size for very small screens */
+    }
+}
